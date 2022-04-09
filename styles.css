@@ -1,0 +1,173 @@
+/*------------------------------------------------------------------
+Table of contents
+
+    1. Site header
+    2. Global styles
+        2.1 Typography
+        2.2 Button styles
+    3. Project Area
+    4. Footer Area
+    5. Media queries
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+   1. Site header
+-------------------------------------------------------------------*/
+
+.site-header.sticky-top.py-1 {
+	background-color: #141313;
+}
+
+.site-header a {
+	color: #ffffff;
+}
+
+.site-header a:hover {
+	color: #d2d2d2;
+	text-decoration: none;
+}
+
+
+/*------------------------------------------------------------------
+   2. Global styles
+-------------------------------------------------------------------*/
+
+.pt-80 {
+	padding-top: 80px;
+}
+.banner-image {
+	width: 455px;
+}
+
+/*------------------------------------------------------------------
+   2.1. Typography
+-------------------------------------------------------------------*/
+html * {
+	font-family: Sans-serif;
+}
+h1 {
+	color: #141313;
+}
+
+h2 {
+	font-size: 44px;
+	letter-spacing: 15px;
+}
+
+h3::after {
+	content: " ";
+	height: 2px;
+	width: 18vw;
+	display: inline-block;
+	margin-left: 5%;
+	transform: translateY(-10px);
+	background: black;
+}
+
+/*--------------------------
+   2.2 Button styles
+----------------------------*/
+.btn-outline-secondary,
+.btn-primary {
+	color: #ffffff;
+	border-color: #141313;
+	background-color: #141313;
+}
+
+.btn-outline-secondary:hover,
+.btn-primary:hover {
+	color: #ffffff;
+	border-color: #2e2c2c;
+	background-color: #2e2c2c;
+}
+
+.btn-outline-info {
+	color: #141313;
+	border-color: #141313;
+	background-color: #ffffff;
+}
+
+.btn-outline-info:hover {
+	color: #141313;
+	border-color: #2e2c2c;
+	background-color: #f2f2f2;
+}
+
+
+/*------------------------------------------------------------------
+   3. Project Area
+-------------------------------------------------------------------*/
+
+
+.project-area {
+	padding: 80px 0;
+}
+
+.project-area .button-group button {
+	background: transparent;
+	border: none;
+	text-transform: uppercase;
+}
+
+.project-area .button-group button {
+	padding-left: 50px
+}
+
+.project-area img {
+	border-radius: 5px;
+}
+
+.project-area .img a:hover img {
+	box-shadow: 0 2px 7px 0 rgb(0 0 0 / 40%);
+	border-radius: 5px;
+}
+
+.project-area h4 {
+	margin-bottom: 0px !important;
+}
+
+
+/*------------------------------------------------------------------
+   4. Footer Area
+-------------------------------------------------------------------*/
+
+.footer {
+	background: #141313;
+	color: #ffffff;
+}
+
+.footer .love .fa-solid.fa-heart {
+	color: #ffffff;
+}
+
+.footer h1 {
+	color: #ffffff;
+}
+
+
+/*------------------------------------------------------------------
+   5. Custom Media Queries
+-------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+	.project-area .img {
+		text-align: center;
+	}
+}
+
+@media (max-width: 445px) {
+	.site-header {
+		font-size: 12px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 388px) {
+	.nav-link {
+		padding: 10px;
+	}
+}
+

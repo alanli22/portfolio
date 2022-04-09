@@ -1,0 +1,174 @@
+/*------------------------------------------------------------------
+Table of contents
+
+    1. Site header
+    2. Global styles
+        2.1 Typography
+        2.2 Button styles
+    3. Project Area
+    4. Footer Area
+    5. Media queries
+
+-------------------------------------------------------------------*/
+$global-font-family:    'Sans-serif';
+$global-font-size:      20px;
+$font-size-small:       12px;
+$font-size-h2:          25px;
+
+
+$color-primary:              #141313;
+$color-white:                #ffffff;
+/*------------------------------------------------------------------
+   1. Site header
+-------------------------------------------------------------------*/
+
+.site-header {
+  &.sticky-top.py-1 {
+    background-color: $color-primary;
+  }
+
+  a {
+    color: $color-white;
+
+    &:hover {
+      color: #d2d2d2;
+      text-decoration: none;
+    }
+  }
+}
+
+
+/*------------------------------------------------------------------
+   2. Global styles
+-------------------------------------------------------------------*/
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.banner-image {
+  width: 455px;
+}
+
+/*------------------------------------------------------------------
+   2.1. Typography
+-------------------------------------------------------------------*/
+html * {
+  font-family: $global-font-family;
+}
+
+h1 {
+  color: $color-primary;
+}
+
+h2 {
+  font-size: 44px;
+  letter-spacing: 15px;
+}
+
+h3::after {
+  content: " ";
+  height: 2px;
+  width: 18vw;
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
+  background: black;
+}
+
+/*--------------------------
+   2.2 Button styles
+----------------------------*/
+.btn-outline-secondary, .btn-primary {
+  color: $color-white;
+  border-color: $color-primary;
+  background-color: $color-primary;
+}
+
+.btn-outline-secondary:hover, .btn-primary:hover {
+  color: $color-white;
+  border-color: #2e2c2c;
+  background-color: #2e2c2c;
+}
+
+.btn-outline-info {
+  color: $color-primary;
+  border-color: $color-primary;
+  background-color: $color-white;
+
+  &:hover {
+    color: $color-primary;
+    border-color: #2e2c2c;
+    background-color: #f2f2f2;
+  }
+}
+
+
+/*------------------------------------------------------------------
+   3. Project Area
+-------------------------------------------------------------------*/
+
+
+.project-area {
+  padding: 80px 0;
+
+  .button-group button {
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    padding-left: 50px;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+
+  .img a:hover img {
+    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 40%);
+    border-radius: 5px;
+  }
+
+  h4 {
+    margin-bottom: 0px !important;
+  }
+}
+
+
+/*------------------------------------------------------------------
+   4. Footer Area
+-------------------------------------------------------------------*/
+
+.footer {
+  background: $color-primary;
+  color: $color-white;
+
+  .love .fa-solid.fa-heart, h1 {
+    color: $color-white;
+  }
+}
+
+/*------------------------------------------------------------------
+   5. Custom Media Queries
+-------------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .project-area .img {
+    text-align: center;
+  }
+}
+
+@media (max-width: 445px) {
+  .site-header {
+    font-size: $font-size-small;
+  }
+
+  h2 {
+    font-size: $font-size-h2;
+  }
+}
+
+@media (max-width: 388px) {
+  .nav-link {
+    padding: 10px;
+  }
+}
+
